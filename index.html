@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Caribbean E-commerce Guide 2026: Three Business Structure Options</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f0f7ff;
+            color: #1a3b5c;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #003f5c 0%, #2b6c8f 50%, #4c9ab3 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 5px solid #ffb347;
+        }
+
+        .hero:before {
+            content: "🛍️ 🇹🇹 🇯🇲 🇧🇧 🇩🇴 🛒 🇺🇸";
+            font-size: 5rem;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            opacity: 0.2;
+            white-space: nowrap;
+            animation: scrollEmojis 20s linear infinite;
+        }
+
+        @keyframes scrollEmojis {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 10vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+        }
+
+        .hero .subhead {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            font-weight: 300;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .hero .badge {
+            background: #ffb347;
+            color: #003f5c;
+            padding: 12px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.3rem;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        /* Beginner's intro */
+        .beginner-intro {
+            background: #fff3e0;
+            border-radius: 30px;
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 1000px;
+            border: 5px solid #ffb347;
+            text-align: center;
+        }
+
+        .beginner-intro h2 {
+            font-size: 2.5rem;
+            color: #003f5c;
+            margin-bottom: 20px;
+        }
+
+        .beginner-intro p {
+            font-size: 1.3rem;
+            color: #1a3b5c;
+        }
+
+        /* Sections */
+        .section {
+            padding: 70px 15px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 6vw, 3rem);
+            margin-bottom: 50px;
+            color: #003f5c;
+            position: relative;
+            font-weight: 700;
+        }
+
+        .section-title:after {
+            content: '';
+            width: 150px;
+            height: 6px;
+            background: #ffb347;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 3px;
+        }
+
+        .subsection-title {
+            font-size: clamp(1.6rem, 5vw, 2.2rem);
+            color: #2b6c8f;
+            margin: 40px 0 25px;
+            border-left: 10px solid #ffb347;
+            padding-left: 20px;
+            font-weight: 600;
+        }
+
+        /* Stats bar */
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: linear-gradient(135deg, #003f5c, #2b6c8f);
+            border-radius: 60px;
+            padding: 60px 30px;
+            color: white;
+            margin: 50px 0;
+            border: 2px solid #ffb347;
+        }
+
+        .stat-item {
+            text-align: center;
+            flex: 1 1 200px;
+            margin: 15px;
+        }
+
+        .stat-number {
+            font-size: clamp(2.5rem, 7vw, 4rem);
+            font-weight: 800;
+            color: #ffb347;
+        }
+
+        .stat-label {
+            font-size: clamp(1rem, 3vw, 1.3rem);
+        }
+
+        /* Step-by-step cards */
+        .step-container {
+            margin: 50px 0;
+        }
+
+        .step-card {
+            display: flex;
+            flex-wrap: wrap;
+            background: white;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-left: 8px solid #ffb347;
+        }
+
+        .step-number {
+            background: #003f5c;
+            color: white;
+            font-size: 3rem;
+            font-weight: 800;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 120px;
+        }
+
+        .step-content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .step-content h3 {
+            font-size: 1.8rem;
+            color: #003f5c;
+            margin-bottom: 15px;
+        }
+
+        .step-content h4 {
+            font-size: 1.2rem;
+            color: #2b6c8f;
+            margin: 20px 0 10px;
+        }
+
+        .step-content ul {
+            margin: 10px 0 20px;
+            padding-left: 20px;
+        }
+
+        .step-content li {
+            margin-bottom: 8px;
+        }
+
+        .tip-box {
+            background: #fff3e0;
+            border-left: 5px solid #ffb347;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .warning-box {
+            background: #ffe6e6;
+            border-left: 5px solid #e74c3c;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .code-box {
+            background: #1e2a3a;
+            color: #e6f1ff;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+
+        /* Payment gateway table */
+        .payment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .payment-table th {
+            background: #003f5c;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .payment-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .payment-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .payment-table .available {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .payment-table .unavailable {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        /* Jurisdiction cards */
+        .jurisdiction-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .jurisdiction-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 8px solid #003f5c;
+        }
+
+        .jurisdiction-card h4 {
+            font-size: 1.5rem;
+            color: #003f5c;
+            margin-bottom: 15px;
+        }
+
+        .jurisdiction-card .flag {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .jurisdiction-card .tax-tag {
+            background: #27ae60;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        /* US State Cards */
+        .us-state-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .us-state-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-left: 8px solid #1e3a8a;
+        }
+
+        .us-state-card h4 {
+            font-size: 1.4rem;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .us-state-card .best-for {
+            background: #e6f3ff;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        /* Checklist */
+        .checklist {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .checklist-item {
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            width: 25px;
+            height: 25px;
+            accent-color: #ffb347;
+            margin-top: 3px;
+        }
+
+        .checklist-item label {
+            font-size: 1.1rem;
+            color: #1a3b5c;
+        }
+
+        /* Tools grid */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .tool-item {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 8px solid #ffb347;
+        }
+
+        .tool-item h4 {
+            font-size: 1.3rem;
+            color: #003f5c;
+            margin-bottom: 10px;
+        }
+
+        .tool-link {
+            background: #003f5c;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        /* Timeline */
+        .timeline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 50px 0;
+            gap: 20px;
+        }
+
+        .timeline-item {
+            flex: 1 1 180px;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 8px solid #ffb347;
+        }
+
+        .timeline-item .week {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #003f5c;
+        }
+
+        .timeline-item .task {
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        /* Troubleshooting */
+        .troubleshooting-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .troubleshooting-item {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            border-left: 8px solid #e74c3c;
+        }
+
+        .troubleshooting-item .problem {
+            font-weight: 700;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .troubleshooting-item .solution {
+            color: #27ae60;
+        }
+
+        /* Option Cards */
+        .option-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+            justify-content: center;
+        }
+
+        .option-card {
+            flex: 1 1 300px;
+            background: white;
+            border-radius: 30px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .option-card:hover {
+            transform: translateY(-10px);
+            border-color: #ffb347;
+            box-shadow: 0 20px 40px rgba(0,63,92,0.2);
+        }
+
+        .option-card.active {
+            border-color: #ffb347;
+            background: #fff3e0;
+        }
+
+        .option-card .option-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: white;
+        }
+
+        .option-card .option-badge.local { background: #27ae60; }
+        .option-card .option-badge.international { background: #e67e22; }
+        .option-card .option-badge.us { background: #1e3a8a; }
+
+        .option-card h3 {
+            font-size: 1.8rem;
+            color: #003f5c;
+            margin: 20px 0 15px;
+        }
+
+        .option-card i {
+            font-size: 3rem;
+            color: #ffb347;
+        }
+
+        .option-card .pros {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .option-card .cons {
+            background: #ffe6e6;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #003f5c;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 5px solid #ffb347;
+        }
+
+        /* Back to top */
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #ffb347;
+            color: #003f5c;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: none;
+            z-index: 999;
+        }
+
+        #backToTop.visible {
+            opacity: 1;
+        }
+
+        /* Option sections */
+        .option-section {
+            display: block;
+            margin-top: 40px;
+        }
+
+        .option-content {
+            display: none;
+        }
+
+        .option-content.active {
+            display: block;
+        }
+
+        .option-indicator {
+            text-align: center;
+            margin: 20px 0 40px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #003f5c;
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 50px;
+            display: inline-block;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .option-indicator i {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .section { padding: 50px 15px; }
+            .hero:before { font-size: 3rem; }
+            .step-card { flex-direction: column; }
+            .step-number { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>🛒 Caribbean E-commerce Guide 2026</h1>
+        <div class="subhead">Complete Step-by-Step Setup + Three Business Structure Options</div>
+        <div class="badge">🌴 15 Countries • $2.5B+ Market • Choose Your Path</div>
+    </div>
+
+    <div class="beginner-intro">
+        <h2>👋 Welcome to the Complete Caribbean E-commerce Guide!</h2>
+        <p>This guide gives you a <strong>complete 8-week launch plan</strong> PLUS three different business structure options. Choose the path that fits your goals:</p>
+        
+        <div style="display: flex; gap: 20px; justify-content: center; margin-top: 30px; flex-wrap: wrap;">
+            <span style="background: #27ae60; color: white; padding: 10px 25px; border-radius: 50px; font-weight: 600;">🏠 Option 1: Local Caribbean Business</span>
+            <span style="background: #e67e22; color: white; padding: 10px 25px; border-radius: 50px; font-weight: 600;">🌐 Option 2: International Caribbean LLC</span>
+            <span style="background: #1e3a8a; color: white; padding: 10px 25px; border-radius: 50px; font-weight: 600;">🇺🇸 Option 3: US LLC</span>
+        </div>
+    </div>
+
+    <!-- SECTION 1: Overview & Timeline -->
+    <section class="section">
+        <h2 class="section-title">📅 Your 8-Week Launch Timeline</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="week">Week 1</div>
+                <div class="task">Plan & Research</div>
+            </div>
+            <div class="timeline-item">
+                <div class="week">Week 2-3</div>
+                <div class="task">Choose Structure + Platform</div>
+            </div>
+            <div class="timeline-item">
+                <div class="week">Week 4-5</div>
+                <div class="task">Payment Gateway</div>
+            </div>
+            <div class="timeline-item">
+                <div class="week">Week 6</div>
+                <div class="task">Products & Content</div>
+            </div>
+            <div class="timeline-item">
+                <div class="week">Week 7</div>
+                <div class="task">Test & Launch</div>
+            </div>
+            <div class="timeline-item">
+                <div class="week">Week 8+</div>
+                <div class="task">Market & Grow</div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">3-8</div>
+                <div class="stat-label">Weeks for merchant account</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">$500</div>
+                <div class="stat-label">Minimum startup budget</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">85%</div>
+                <div class="stat-label">Of customers research online first</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Structure Selector -->
+    <section class="section">
+        <h2 class="section-title">🏛️ Step 1: Choose Your Business Structure</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Click on each option to see how it affects your setup. The rest of the guide adapts to your choice.</p>
+
+        <div class="option-cards">
+            <div class="option-card" onclick="selectOption('local')" id="card-local">
+                <div class="option-badge local">🏠 Local</div>
+                <i class="fas fa-home"></i>
+                <h3>Local Caribbean Business</h3>
+                <div class="pros">✅ Simple setup, no foreign filings, local bank accounts</div>
+                <div class="cons">⚠️ Stripe unavailable, limited payment options, harder to scale globally</div>
+            </div>
+            <div class="option-card" onclick="selectOption('international')" id="card-international">
+                <div class="option-badge international">🌐 Int'l LLC</div>
+                <i class="fas fa-globe"></i>
+                <h3>International Caribbean LLC</h3>
+                <div class="pros">✅ Tax efficiency, asset protection, global credibility</div>
+                <div class="cons">⚠️ Higher costs, complex compliance, economic substance rules</div>
+            </div>
+            <div class="option-card" onclick="selectOption('us')" id="card-us">
+                <div class="option-badge us">🇺🇸 US LLC</div>
+                <i class="fas fa-flag-usa"></i>
+                <h3>US LLC</h3>
+                <div class="pros">✅ Stripe/PayPal access, US banking, global trust</div>
+                <div class="cons">⚠️ $25,000 penalty risk if non-compliant, IRS filings required</div>
+            </div>
+        </div>
+
+        <div id="option-indicator" class="option-indicator">
+            <i class="fas fa-home" id="indicator-icon"></i>
+            <span id="indicator-text">Option 1: Local Caribbean Business selected</span>
+        </div>
+    </section>
+
+    <!-- OPTION-SPECIFIC GUIDANCE (shown based on selection) -->
+    <div id="option-local-content" class="option-content active">
+        <section class="section" style="background: #e6f3ff; border-radius: 60px; margin-top: 0;">
+            <h2 class="section-title">🏠 Local Caribbean Business Structure</h2>
+            <div class="warning-box">
+                <strong>⚠️ IMPORTANT:</strong> With this structure, Stripe and Shopify Payments are NOT available. You'll need local payment gateways like First Atlantic Commerce or Plug n Pay. See Week 4-5 for details.
+            </div>
+            <div style="background: white; border-radius: 30px; padding: 25px;">
+                <h3 style="color: #003f5c;">What You Need:</h3>
+                <ul>
+                    <li>✓ Business registration in your country (TTBS, Companies Office, etc.)</li>
+                    <li>✓ Local business bank account</li>
+                    <li>✓ Tax registration (VAT, PAYE if applicable)</li>
+                    <li>✓ Local payment gateway application (3-8 weeks processing)</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div id="option-international-content" class="option-content">
+        <section class="section" style="background: #e6f3ff; border-radius: 60px; margin-top: 0;">
+            <h2 class="section-title">🌐 International Caribbean LLC Structure</h2>
+            <div class="warning-box">
+                <strong>⚠️ IMPORTANT:</strong> This structure gives you tax efficiency but requires ongoing compliance. Economic substance rules apply. You MUST work with a registered agent.
+            </div>
+            <div style="background: white; border-radius: 30px; padding: 25px;">
+                <h3 style="color: #003f5c;">Jurisdiction Comparison:</h3>
+                <table class="payment-table">
+                    <tr><th>Jurisdiction</th><th>Setup Cost</th><th>Annual Cost</th><th>Best For</th></tr>
+                    <tr><td>Cayman Islands</td><td>$2,500-3,500</td><td>$1,500</td><td>High-growth, investors</td></tr>
+                    <tr><td>BVI</td><td>$2,000-2,500</td><td>$1,200</td><td>Trading, IP holding</td></tr>
+                    <tr><td>Belize</td><td>$1,500-2,000</td><td>$800-1,000</td><td>Cost-conscious startups</td></tr>
+                    <tr><td>Nevis</td><td>$2,000-2,500</td><td>$1,000</td><td>Asset protection</td></tr>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <div id="option-us-content" class="option-content">
+        <section class="section" style="background: #e6f3ff; border-radius: 60px; margin-top: 0;">
+            <h2 class="section-title">🇺🇸 US LLC Structure</h2>
+            <div class="warning-box">
+                <strong>⚠️ CRITICAL:</strong> US LLCs require annual Form 5472 filing. Missing this triggers a $25,000 PENALTY. You must work with a US tax professional.
+            </div>
+            <div style="background: white; border-radius: 30px; padding: 25px;">
+                <h3 style="color: #003f5c;">State Comparison:</h3>
+                <table class="payment-table">
+                    <tr><th>State</th><th>Setup Cost</th><th>Annual Fee</th><th>Best For</th></tr>
+                    <tr><td>Wyoming</td><td>$100</td><td>$60</td><td>Privacy, low cost</td></tr>
+                    <tr><td>Delaware</td><td>$90</td><td>$300</td><td>Venture capital, investors</td></tr>
+                    <tr><td>Florida</td><td>$125</td><td>$138.75</td><td>US operations</td></tr>
+                </table>
+                <div class="tip-box" style="margin-top: 20px;">
+                    <strong>💡 EIN note:</strong> Apply by fax/mail as non-resident. Takes 4-8 weeks. Cannot use online system without SSN/ITIN.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== COMPLETE ORIGINAL GUIDE (ALL STEPS PRESERVED) ===== -->
+    <div class="step-container">
+        <!-- STEP 1: Week 1 Planning -->
+        <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h3>Week 1: Plan Your Store</h3>
+                
+                <h4>📝 Step 1.1: Define Your Products</h4>
+                <p>Create a spreadsheet with:</p>
+                <ul>
+                    <li><strong>Product name</strong> – Be specific (e.g., "Handmade Cocoa Butter Soap – 200g")</li>
+                    <li><strong>Description</strong> – What is it? What problem does it solve?</li>
+                    <li><strong>Cost price</strong> – What you pay to make/buy it</li>
+                    <li><strong>Selling price</strong> – What customers pay</li>
+                    <li><strong>Shipping weight</strong> – In kg or lbs</li>
+                    <li><strong>Dimensions</strong> – For shipping calculations</li>
+                    <li><strong>Stock quantity</strong> – How many you have</li>
+                    <li><strong>Images needed</strong> – List what photos you need</li>
+                </ul>
+
+                <div class="tip-box">
+                    <strong>💡 Pro tip:</strong> Start with 10-20 products. Don't try to list everything at once. Launch with your best sellers.
+                </div>
+
+                <h4>📋 Step 1.2: Pricing Strategy</h4>
+                <p>Calculate your price using this formula:</p>
+                <div class="code-box">
+                    Selling Price = (Cost + Shipping + Payment Fees) × (1 + Profit Margin)
+                </div>
+                <p>Example for a $10 product in Trinidad:</p>
+                <ul>
+                    <li>Cost: $10</li>
+                    <li>Shipping (average): $5</li>
+                    <li>Payment fees (3%): $0.45</li>
+                    <li>Subtotal: $15.45</li>
+                    <li>Profit margin (30%): $4.64</li>
+                    <li><strong>Final price: $20.09 → $20.00</strong></li>
+                </ul>
+
+                <h4>📸 Step 1.3: Product Photos</h4>
+                <p>You need at least 3 photos per product:</p>
+                <ul>
+                    <li><strong>Hero shot:</strong> Product alone on white background</li>
+                    <li><strong>Lifestyle shot:</strong> Product being used</li>
+                    <li><strong>Detail shot:</strong> Close-up of texture/features</li>
+                </ul>
+
+                <div class="tip-box">
+                    <strong>📱 Free tool:</strong> Use your phone in natural light near a window. Edit with Canva or Snapseed (free).
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 2: Platform Setup -->
+        <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h3>Weeks 2-3: Choose & Set Up Your Platform</h3>
+
+                <h4>🤔 Step 2.1: Which Platform Should You Use?</h4>
+                
+                <table class="payment-table">
+                    <tr>
+                        <th>Platform</th>
+                        <th>Monthly Cost</th>
+                        <th>Difficulty</th>
+                        <th>Best For</th>
+                    </tr>
+                    <tr>
+                        <td><strong>WooCommerce</strong></td>
+                        <td>$0 + hosting ($10-30)</td>
+                        <td>Medium</td>
+                        <td>Flexibility, any payment gateway</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Shopify</strong></td>
+                        <td>$29+</td>
+                        <td>Easy</td>
+                        <td>Quick start, but payment restrictions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wix eCommerce</strong></td>
+                        <td>$23+</td>
+                        <td>Easy</td>
+                        <td>Beginners, simple stores</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Custom</strong></td>
+                        <td>$2,000+ upfront</td>
+                        <td>Hard</td>
+                        <td>Large businesses, unique needs</td>
+                    </tr>
+                </table>
+
+                <div class="warning-box" id="platform-warning-local">
+                    <strong>⚠️ IMPORTANT:</strong> Shopify Payments and Stripe do NOT work in most Caribbean countries. If you choose Shopify, you'll need a third-party payment gateway which costs extra fees.
+                </div>
+
+                <div class="warning-box" id="platform-warning-us" style="display: none;">
+                    <strong>✅ GOOD NEWS:</strong> With a US LLC, you CAN use Stripe and Shopify Payments directly. No third-party gateway needed.
+                </div>
+
+                <h4>🔧 Step 2.2: Setting Up WooCommerce (Recommended)</h4>
+                <p>Follow these exact steps:</p>
+
+                <ol>
+                    <li><strong>Buy hosting</strong> – Go to a Caribbean-friendly host like SiteGround, HostGator, or local providers (TSTT in Trinidad, Flow). Cost: $10-30/month.</li>
+                    <li><strong>Install WordPress</strong> – Most hosts have 1-click install.</li>
+                    <li><strong>Install WooCommerce plugin</strong> – Go to Plugins → Add New → Search "WooCommerce" → Install → Activate.</li>
+                    <li><strong>Run WooCommerce setup wizard</strong> – Enter your store location, currency (TTD, JMD, etc.), and business type.</li>
+                </ol>
+
+                <div class="code-box">
+                    <strong>📋 WooCommerce Setup Checklist:</strong><br>
+                    ✓ Store address entered correctly<br>
+                    ✓ Currency set to your local currency<br>
+                    ✓ Tax settings configured<br>
+                    ✓ Shipping zones created<br>
+                    ✓ Payment methods configured (next step)
+                </div>
+
+                <h4>⚙️ Step 2.3: Choose Your Theme</h4>
+                <ul>
+                    <li>Go to Appearance → Themes → Add New</li>
+                    <li>Search for "Storefront" (free, built by WooCommerce)</li>
+                    <li>Install and activate</li>
+                    <li>Customize colors, logo, and layout under Appearance → Customize</li>
+                </ul>
+
+                <div class="tip-box">
+                    <strong>💡 Need a logo?</strong> Use Canva (free) – search for "logo" templates, customize with your business name, download as PNG.
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 3: Payment Gateways -->
+        <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h3>Weeks 4-5: Set Up Payment Gateway</h3>
+
+                <p><strong>This is the hardest part for Caribbean businesses.</strong> International processors often don't work. Follow these steps carefully.</p>
+
+                <h4>🏦 Step 3.1: Get a Merchant Account</h4>
+                <p>You need a merchant account from your bank to accept credit cards. This takes <strong>3-8 weeks</strong>, so start NOW.</p>
+
+                <div class="code-box">
+                    <strong>📞 Call your bank and ask:</strong><br>
+                    "I want to accept credit card payments online. Can you provide a merchant account? What are the fees? Which payment gateways do you work with?"
+                </div>
+
+                <p><strong>Common Caribbean banks that offer merchant accounts:</strong></p>
+                <ul>
+                    <li>🇹🇹 Trinidad: Republic Bank, Scotiabank, RBC</li>
+                    <li>🇯🇲 Jamaica: National Commercial Bank, Scotiabank</li>
+                    <li>🇧🇧 Barbados: Barbados National Bank, CIBC</li>
+                    <li>🇩🇴 Dominican Republic: Banco Popular, Scotiabank</li>
+                    <li>🇰🇾 Cayman: Cayman National Bank, Butterfield</li>
+                </ul>
+
+                <h4>💳 Step 3.2: Choose Your Payment Gateway</h4>
+                <p>Once you have a merchant account, you need a gateway to connect your store to the bank.</p>
+
+                <table class="payment-table">
+                    <tr>
+                        <th>Gateway</th>
+                        <th>Setup Fee</th>
+                        <th>Monthly Fee</th>
+                        <th>Transaction Fee</th>
+                        <th>Works With</th>
+                    </tr>
+                    <tr>
+                        <td><strong>First Atlantic Commerce (FAC)</strong></td>
+                        <td>$0-500</td>
+                        <td>$0-50</td>
+                        <td>2.5-4%</td>
+                        <td>Caribbean banks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plug n Pay</strong></td>
+                        <td>$0</td>
+                        <td>$0-30</td>
+                        <td>2.9% + $0.30</td>
+                        <td>Caribbean region</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PayPal</strong></td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>2.9% + $0.30</td>
+                        <td>Most countries</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Authorize.net</strong></td>
+                        <td>$49</td>
+                        <td>$25</td>
+                        <td>2.9% + $0.30</td>
+                        <td>US accounts only</td>
+                    </tr>
+                </table>
+
+                <div id="us-payment-note" style="display: none; background: #e8f5e9; padding: 15px; border-radius: 10px; margin: 20px 0;">
+                    <strong>🇺🇸 US LLC Note:</strong> You can use Stripe, Shopify Payments, and Square directly. Apply with your US EIN and bank account.
+                </div>
+
+                <h4>🔌 Step 3.3: Connect Gateway to WooCommerce</h4>
+                <p>For First Atlantic Commerce (example):</p>
+                <ol>
+                    <li>Contact FAC for your API credentials (merchant ID, API key, etc.)</li>
+                    <li>In WordPress, go to Plugins → Add New</li>
+                    <li>Search for "First Atlantic Commerce WooCommerce" or use a generic plugin like "WooCommerce Custom Payment Gateway"</li>
+                    <li>Enter your credentials in WooCommerce → Settings → Payments</li>
+                    <li>Set to "Test Mode" first</li>
+                </ol>
+
+                <div class="code-box">
+                    <strong>Test transaction checklist:</strong><br>
+                    ✓ Use test card numbers from your gateway<br>
+                    ✓ Verify order appears in WooCommerce<br>
+                    ✓ Check that email confirmations send<br>
+                    ✓ Test a refund process<br>
+                    ✓ Try a failed card to see error message
+                </div>
+
+                <h4>💡 Alternative: Start with PayPal</h4>
+                <p>While customers prefer credit cards, PayPal works in most Caribbean countries and is much faster to set up. Use it as your first payment method while you wait for your merchant account.</p>
+            </div>
+        </div>
+
+        <!-- STEP 4: Products & Content -->
+        <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h3>Week 6: Add Products & Content</h3>
+
+                <h4>📝 Step 4.1: Add Products to WooCommerce</h4>
+                <ol>
+                    <li>Go to Products → Add New</li>
+                    <li>Enter product name (e.g., "Trinidad Hot Pepper Sauce – 250ml")</li>
+                    <li>Write description:
+                        <ul>
+                            <li>First paragraph: What it is and key benefit</li>
+                            <li>Bullet points: Features, ingredients, size</li>
+                            <li>Last paragraph: Why choose your brand</li>
+                        </ul>
+                    </li>
+                    <li>Set price (regular price, sale price if applicable)</li>
+                    <li>Upload product images (featured image + gallery)</li>
+                    <li>Set inventory (stock quantity, SKU)</li>
+                    <li>Set shipping (weight, dimensions)</li>
+                    <li>Set categories (e.g., "Hot Sauces," "Gifts")</li>
+                    <li>Click "Publish"</li>
+                </ol>
+
+                <div class="code-box">
+                    <strong>📋 Example product description:</strong><br>
+                    "Our Trinidad Scorpion Pepper Sauce brings authentic Caribbean heat to your kitchen. Made with fresh scorpion peppers, garlic, and local spices, this small-batch sauce packs serious flavor.<br><br>
+                    • Heat level: 8/10<br>
+                    • Ingredients: Scorpion peppers, vinegar, garlic, salt<br>
+                    • Size: 250ml glass bottle<br>
+                    • Shelf life: 2 years unopened<br><br>
+                    Perfect for stews, marinades, or adding kick to your favorite dishes."
+                </div>
+
+                <h4>📄 Step 4.2: Create Essential Pages</h4>
+                <p>Go to Pages → Add New and create:</p>
+                <ul>
+                    <li><strong>About Us</strong> – Your story, why you started, your values</li>
+                    <li><strong>Shipping Policy</strong> – Costs, delivery times, carriers</li>
+                    <li><strong>Returns Policy</strong> – Can customers return? How? Who pays?</li>
+                    <li><strong>Privacy Policy</strong> – How you handle customer data (required by law)</li>
+                    <li><strong>Terms of Service</strong> – Legal terms for using your site</li>
+                    <li><strong>Contact Us</strong> – Email, phone, contact form</li>
+                </ul>
+
+                <h4>⚡ Step 4.3: Set Up Shipping</h4>
+                <p>In WooCommerce → Settings → Shipping:</p>
+                <ol>
+                    <li>Add shipping zones (e.g., "Trinidad," "Caribbean," "USA")</li>
+                    <li>For each zone, add shipping methods:
+                        <ul>
+                            <li><strong>Flat rate:</strong> Fixed price per order (e.g., $20 to Trinidad)</li>
+                            <li><strong>Free shipping:</strong> For orders over $100</li>
+                            <li><strong>Local pickup:</strong> Customer collects from you</li>
+                        </ul>
+                    </li>
+                    <li>Test shipping calculations with different products</li>
+                </ol>
+
+                <div class="tip-box">
+                    <strong>📦 Caribbean shipping resources:</strong><br>
+                    • Caribshopper – Consolidates shipments to USA/UK<br>
+                    • DHL/FedEx – Reliable but expensive<br>
+                    • Local couriers – Often cheaper for local delivery<br>
+                    • TTPOST (Trinidad), Jamaica Post, etc. – National postal services
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 5: Test & Launch -->
+        <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <h3>Week 7: Test Everything</h3>
+
+                <h4>🧪 Step 5.1: Test Your Store</h4>
+                <p>Create a checklist and go through every item:</p>
+
+                <div class="checklist">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="test1">
+                        <label for="test1">Homepage loads correctly on phone, tablet, desktop</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="test2">
+                        <label for="test2">Product pages show images, price, description</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="test3">
+                        <label for="test3">Add to cart works</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="test4">
+                        <label for="test4">Cart page updates quantities correctly</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="test5">
+                        <label for="test5">Checkout process (guest and logged in)</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="test6">
+                        <label for="test6">Payment gateway – process a real $1 transaction</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="test7">
+                        <label for="test7">Order confirmation email received</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="test8">
+                        <label for="test8">Admin can view order details</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="test9">
+                        <label for="test9">Shipping calculator shows correct rates</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="test10">
+                        <label for="test10">Contact form works and emails you</label>
+                    </div>
+                </div>
+
+                <h4>🚀 Step 5.2: Launch Day</h4>
+                <ol>
+                    <li>Remove "Coming Soon" mode</li>
+                    <li>Post on your social media: "We're live!"</li>
+                    <li>Email your existing customers (if you have any)</li>
+                    <li>Offer a launch discount (10% off first order)</li>
+                    <li>Ask friends to test and leave feedback</li>
+                </ol>
+
+                <div class="tip-box">
+                    <strong>🎉 Launch day checklist:</strong><br>
+                    ✓ Announce on all social platforms<br>
+                    ✓ Send email to your list<br>
+                    ✓ Update Google My Business with website link<br>
+                    ✓ Add website to email signature<br>
+                    ✓ Tell everyone you meet!
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 6: Marketing & Growth -->
+        <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-content">
+                <h3>Week 8+: Market & Grow</h3>
+
+                <h4>📱 Step 6.1: Social Commerce</h4>
+                <p>Set up shopping on social media:</p>
+                <ul>
+                    <li><strong>Facebook Shop:</strong> Connect your WooCommerce store via Facebook for WooCommerce plugin</li>
+                    <li><strong>Instagram Shopping:</strong> Link your product catalog</li>
+                    <li><strong>WhatsApp Business:</strong> Add product catalog and quick replies</li>
+                </ul>
+
+                <h4>📧 Step 6.2: Email Marketing</h4>
+                <p>Start building your email list from Day 1:</p>
+                <ol>
+                    <li>Install Mailchimp or MailerLite (free for first 500-1000 subscribers)</li>
+                    <li>Add signup form to your website (popup or sidebar)</li>
+                    <li>Send a welcome email to new subscribers</li>
+                    <li>Send monthly newsletters with new products</li>
+                </ol>
+
+                <div class="code-box">
+                    <strong>📋 Email sequence for new subscribers:</strong><br>
+                    Email 1 (immediate): "Thanks for subscribing – here's 10% off"<br>
+                    Email 2 (3 days later): "Meet the founder / our story"<br>
+                    Email 3 (7 days later): "Our best-selling products"<br>
+                    Email 4 (14 days later): "Customer reviews & testimonials"
+                </div>
+
+                <h4>🔍 Step 6.3: Get Found on Google</h4>
+                <ol>
+                    <li>Set up Google Search Console (free) – search "Google Search Console setup"</li>
+                    <li>Submit your sitemap (yourdomain.com/sitemap.xml)</li>
+                    <li>Set up Google Analytics to track visitors</li>
+                    <li>Add your business to Google My Business (even if you don't have a physical store)</li>
+                </ol>
+
+                <h4>📊 Step 6.4: Track Your Numbers</h4>
+                <p>Create a simple spreadsheet to track:</p>
+                <ul>
+                    <li><strong>Daily:</strong> Orders, revenue, top products</li>
+                    <li><strong>Weekly:</strong> Website visitors, conversion rate</li>
+                    <li><strong>Monthly:</strong> Total sales, expenses, profit</li>
+                </ul>
+
+                <div class="tip-box">
+                    <strong>📈 Your first 90-day goals:</strong><br>
+                    • 10 orders (proof of concept)<br>
+                    • $500 revenue (validation)<br>
+                    • 100 email subscribers (future marketing)<br>
+                    • 5 customer reviews (social proof)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Troubleshooting Common Problems -->
+    <section class="section" style="background: #e6f3ff; border-radius: 60px;">
+        <h2 class="section-title">🔧 Troubleshooting Common Caribbean E-commerce Problems</h2>
+
+        <div class="troubleshooting-grid">
+            <div class="troubleshooting-item">
+                <div class="problem">❌ "Stripe isn't available in my country"</div>
+                <div class="solution">✅ Use First Atlantic Commerce, Plug n Pay, or PayPal instead. Or consider a US LLC (Option 3) to access Stripe.</div>
+            </div>
+            <div class="troubleshooting-item">
+                <div class="problem">❌ "Shopify Payments won't activate"</div>
+                <div class="solution">✅ Install a third-party gateway plugin like "PayPal" or "Authorize.net" (if you have a US bank account).</div>
+            </div>
+            <div class="troubleshooting-item">
+                <div class="problem">❌ "Bank says I need a merchant account – it takes weeks"</div>
+                <div class="solution">✅ Start with PayPal immediately while you wait. You can add the merchant account later.</div>
+            </div>
+            <div class="troubleshooting-item">
+                <div class="problem">❌ "Shipping costs are too high for customers"</div>
+                <div class="solution">✅ Offer free shipping over $X, or use services like Caribshopper for international orders.</div>
+            </div>
+            <div class="troubleshooting-item">
+                <div class="problem">❌ "Customers don't trust online payments"</div>
+                <div class="solution">✅ Add trust badges, display contact info, offer cash on delivery for first orders, share customer reviews.</div>
+            </div>
+            <div class="troubleshooting-item">
+                <div class="problem">❌ "My site is slow on mobile"</div>
+                <div class="solution">✅ Compress images (TinyPNG), use a caching plugin (W3 Total Cache), upgrade hosting if needed.</div>
+            </div>
+            <div class="troubleshooting-item" id="us-troubleshooting" style="display: none;">
+                <div class="problem">❌ "I have a US LLC but can't open a bank account"</div>
+                <div class="solution">✅ Use Mercury, Relay, or Wise for remote onboarding. Have your bank-ready packet ready with stamped Articles and Operating Agreement.</div>
+            </div>
+            <div class="troubleshooting-item" id="us-tax-troubleshooting" style="display: none;">
+                <div class="problem">❌ "I didn't know about Form 5472"</div>
+                <div class="solution">⚠️ File immediately. The penalty is $25,000. Work with a US tax professional to correct.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Resources -->
+    <section class="section">
+        <h2 class="section-title">🛠️ Tools & Resources (With Links)</h2>
+
+        <div class="tools-grid">
+            <div class="tool-item">
+                <h4>WooCommerce</h4>
+                <p>Free e-commerce plugin for WordPress</p>
+                <a href="#" class="tool-link">woocommerce.com</a>
+            </div>
+            <div class="tool-item">
+                <h4>First Atlantic Commerce</h4>
+                <p>Caribbean payment gateway</p>
+                <a href="#" class="tool-link">fac.com</a>
+            </div>
+            <div class="tool-item">
+                <h4>PayPal</h4>
+                <p>Start accepting payments today</p>
+                <a href="#" class="tool-link">paypal.com</a>
+            </div>
+            <div class="tool-item">
+                <h4>Canva</h4>
+                <p>Design logos, product images, social media</p>
+                <a href="#" class="tool-link">canva.com</a>
+            </div>
+            <div class="tool-item">
+                <h4>Caribshopper</h4>
+                <p>Cross-border shipping solution</p>
+                <a href="#" class="tool-link">caribshopper.com</a>
+            </div>
+            <div class="tool-item">
+                <h4>Mailchimp</h4>
+                <p>Email marketing (free up to 500 contacts)</p>
+                <a href="#" class="tool-link">mailchimp.com</a>
+            </div>
+            <div class="tool-item">
+                <h4>SiteGround</h4>
+                <p>Caribbean-friendly hosting</p>
+                <a href="#" class="tool-link">siteground.com</a>
+            </div>
+            <div class="tool-item">
+                <h4>TinyPNG</h4>
+                <p>Compress images for faster loading</p>
+                <a href="#" class="tool-link">tinypng.com</a>
+            </div>
+            <div class="tool-item" id="us-tool-mercury" style="display: none;">
+                <h4>Mercury</h4>
+                <p>US bank account for non-residents</p>
+                <a href="#" class="tool-link">mercury.com</a>
+            </div>
+            <div class="tool-item" id="us-tool-relay" style="display: none;">
+                <h4>Relay</h4>
+                <p>US business banking</p>
+                <a href="#" class="tool-link">relayfi.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- US LLC Detailed Guide (shown when US option selected) -->
+    <div id="us-detailed-guide" style="display: none;">
+        <section class="section" style="background: #e6f3ff; border-radius: 60px;">
+            <h2 class="section-title">🇺🇸 US LLC: Complete Setup Guide</h2>
+
+            <div class="step-card" style="border-left-color: #1e3a8a;">
+                <div class="step-number">A</div>
+                <div class="step-content">
+                    <h4>Step 1: Choose Your State</h4>
+                    <div class="us-state-grid">
+                        <div class="us-state-card">
+                            <h4>🏔️ Wyoming</h4>
+                            <div class="best-for"><strong>Best for:</strong> Privacy, low costs, online businesses</div>
+                            <ul>
+                                <li>✓ No state income tax</li>
+                                <li>✓ Low startup fees (~$100)</li>
+                                <li>✓ Strong privacy (no public member disclosure)</li>
+                                <li>✓ Minimum annual fees (~$60)</li>
+                            </ul>
+                        </div>
+                        <div class="us-state-card">
+                            <h4>⚖️ Delaware</h4>
+                            <div class="best-for"><strong>Best for:</strong> Venture capital, future investors, legal predictability</div>
+                            <ul>
+                                <li>✓ Respected Court of Chancery</li>
+                                <li>✓ Strong investor preference</li>
+                                <li>✓ No public member disclosure</li>
+                                <li>⚠️ Higher annual franchise tax ($300)</li>
+                            </ul>
+                        </div>
+                        <div class="us-state-card">
+                            <h4>☀️ Florida</h4>
+                            <div class="best-for"><strong>Best for:</strong> Businesses with US operations or customers</div>
+                            <ul>
+                                <li>✓ No personal state income tax</li>
+                                <li>✓ Large consumer base</li>
+                                <li>⚠️ Annual report fee $138.75</li>
+                                <li>⚠️ Requires in-state presence</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tip-box">
+                        <strong>💡 Recommendation:</strong> Start with Wyoming for low costs and privacy. Switch to Delaware later if seeking venture capital.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card" style="border-left-color: #1e3a8a;">
+                <div class="step-number">B</div>
+                <div class="step-content">
+                    <h4>Step 2: Appoint a Registered Agent</h4>
+                    <p>Every US LLC requires a Registered Agent with a physical address in your formation state. They receive legal documents on your behalf. Costs $50-300/year .</p>
+                    <div class="tip-box">
+                        <strong>💡 Popular agents:</strong> Northwest Registered Agent, ZenBusiness, LegalZoom
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card" style="border-left-color: #1e3a8a;">
+                <div class="step-number">C</div>
+                <div class="step-content">
+                    <h4>Step 3: File Articles of Organization</h4>
+                    <p>Submit to the Secretary of State with filing fee ($90-500 depending on state). This legally creates your LLC .</p>
+                    <div class="code-box">
+                        <strong>📋 Required info:</strong> Company name, registered agent, purpose, member names (varies by state)
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card" style="border-left-color: #1e3a8a;">
+                <div class="step-number">D</div>
+                <div class="step-content">
+                    <h4>Step 4: Get Your EIN (Employer Identification Number)</h4>
+                    <p>Apply to the IRS for your federal tax ID. Required for bank accounts and tax filings. As a non-resident, use Form SS-4 by fax or mail. Processing takes 4-8 weeks .</p>
+                    <div class="warning-box">
+                        <strong>⚠️ Critical:</strong> The online EIN application requires an SSN or ITIN. Non-residents MUST use fax or mail .
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card" style="border-left-color: #1e3a8a;">
+                <div class="step-number">E</div>
+                <div class="step-content">
+                    <h4>Step 5: Draft an Operating Agreement</h4>
+                    <p>Even if not required by your state, create one. It establishes ownership, management, and profit distribution. Essential for banking .</p>
+                </div>
+            </div>
+
+            <div class="step-card" style="border-left-color: #1e3a8a;">
+                <div class="step-number">F</div>
+                <div class="step-content">
+                    <h4>Step 6: Open a US Bank Account</h4>
+                    <p>You'll need a "bank-ready packet" including :</p>
+                    <ul>
+                        <li>Stamped Articles of Organization</li>
+                        <li>EIN confirmation letter</li>
+                        <li>Operating agreement naming manager and owners</li>
+                        <li>Passport copies of all beneficial owners</li>
+                        <li>Proof of address (utility bill, bank statement)</li>
+                        <li>Short business plan explaining payment flows</li>
+                    </ul>
+                    <div class="tip-box">
+                        <strong>💡 Online banks for non-residents:</strong> Mercury, Relay, Wise support remote onboarding 
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card" style="border-left-color: #1e3a8a;">
+                <div class="step-number">G</div>
+                <div class="step-content">
+                    <h4>Step 7: Comply with US Tax Requirements</h4>
+                    <p>Foreign-owned disregarded entities must file Form 5472 for reportable transactions. Missing this triggers a <strong>$25,000 penalty</strong> .</p>
+                    <ul>
+                        <li>✓ File Form 5472 + pro-forma Form 1120 annually</li>
+                        <li>✓ BOI reporting may apply (check FinCEN requirements)</li>
+                        <li>✓ No US tax if no US-sourced income and no US trade or business</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step-card" style="border-left-color: #1e3a8a;">
+                <div class="step-number">H</div>
+                <div class="step-content">
+                    <h4>Step 8: Set Up Payment Processing</h4>
+                    <p>With your US LLC and bank account, you can now access :</p>
+                    <ul>
+                        <li>✅ Stripe (full access)</li>
+                        <li>✅ Shopify Payments</li>
+                        <li>✅ PayPal (US account)</li>
+                        <li>✅ Square</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="warning-box" style="margin-top: 30px;">
+                <strong>🚨 COST COMPARISON:</strong> DIY formations often fail bank KYC and can cost $87,000+ in penalties vs $4,500 for professional formation . Work with experts.
+            </div>
+        </section>
+    </div>
+
+    <!-- International LLC Detailed Guide (shown when international option selected) -->
+    <div id="international-detailed-guide" style="display: none;">
+        <section class="section" style="background: #e6f3ff; border-radius: 60px;">
+            <h2 class="section-title">🌐 International Caribbean LLC: Complete Setup Guide</h2>
+            
+            <div class="jurisdiction-grid">
+                <div class="jurisdiction-card">
+                    <div class="flag">🇰🇾</div>
+                    <h4>Cayman Islands</h4>
+                    <span class="tax-tag">Zero corporate tax</span>
+                    <p><strong>Best for:</strong> High-growth e-commerce, investment holding, global brands</p>
+                    <ul>
+                        <li>✓ No income tax, capital gains tax, or withholding tax</li>
+                        <li>✓ 100% foreign ownership allowed</li>
+                        <li>✓ No currency controls</li>
+                        <li>✓ Highly respected by global banks</li>
+                    </ul>
+                    <div class="tip-box">💰 Cost: ~$2,500-3,500 setup + ~$1,500/year maintenance</div>
+                </div>
+                <div class="jurisdiction-card">
+                    <div class="flag">🇻🇬</div>
+                    <h4>British Virgin Islands</h4>
+                    <span class="tax-tag">Zero corporate tax</span>
+                    <p><strong>Best for:</strong> Trading companies, holding structures, IP ownership</p>
+                    <ul>
+                        <li>✓ Most popular offshore jurisdiction globally</li>
+                        <li>✓ No taxes on offshore income</li>
+                        <li>✓ Simple annual renewal</li>
+                        <li>✓ Strong privacy protection</li>
+                    </ul>
+                </div>
+                <div class="jurisdiction-card">
+                    <div class="flag">🇧🇿</div>
+                    <h4>Belize</h4>
+                    <span class="tax-tag">Zero tax on foreign income</span>
+                    <p><strong>Best for:</strong> Cost-conscious startups, e-commerce, consulting</p>
+                    <ul>
+                        <li>✓ Lower setup and maintenance costs</li>
+                        <li>✓ No minimum capital requirement</li>
+                        <li>✓ Single member allowed</li>
+                        <li>✓ No public register of members</li>
+                    </ul>
+                    <div class="tip-box">💰 Cost: ~$1,500-2,000 setup + ~$800-1,000/year</div>
+                </div>
+                <div class="jurisdiction-card">
+                    <div class="flag">🇳🇱</div>
+                    <h4>Nevis</h4>
+                    <span class="tax-tag">Zero tax</span>
+                    <p><strong>Best for:</strong> Asset protection, holding companies, high-risk businesses</p>
+                    <ul>
+                        <li>✓ World's strongest asset protection laws</li>
+                        <li>✓ Nevis LLC Ordinance is gold standard</li>
+                        <li>✓ No residency requirements</li>
+                        <li>✓ Charging order protection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step-card" style="border-left-color: #e67e22;">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Step 1: Choose Jurisdiction & Engage Registered Agent</h4>
+                    <p>Based on your business model, budget, and banking needs. Every jurisdiction requires a local registered agent who will file documents and provide registered address.</p>
+                </div>
+            </div>
+            <div class="step-card" style="border-left-color: #e67e22;">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Step 2: Prepare KYC Documents</h4>
+                    <p>Certified passport copies, proof of address, professional references, and proposed company name.</p>
+                </div>
+            </div>
+            <div class="step-card" style="border-left-color: #e67e22;">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Step 3: File & Pay</h4>
+                    <p>Processing takes 3-7 business days. You'll receive Certificate of Incorporation, Memorandum & Articles, and registered agent details.</p>
+                </div>
+            </div>
+            <div class="step-card" style="border-left-color: #e67e22;">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Step 4: Open Bank Account</h4>
+                    <p>Options include international banks (HSBC, Citi), online banks (Mercury, Relay), or local Caribbean banks.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FINAL: You're ready! -->
+    <section style="text-align: center; padding: 60px 20px;">
+        <div style="font-size: 6rem;">🛒</div>
+        <h2 style="font-size: 3rem; color: #003f5c;">You're ready to launch!</h2>
+        <p style="font-size: 1.5rem; margin-top: 20px;">Choose your structure, follow the steps, and start selling online.</p>
+        <div style="margin-top: 40px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <span style="background: #003f5c; color: white; padding: 15px 40px; border-radius: 50px; font-weight: 700;">📌 Bookmark this guide</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>🛒 <strong>Caribbean E-commerce Guide 2026 – Three Business Structure Options</strong></p>
+        <p style="margin-top: 20px;">Sources: WooCommerce docs, First Atlantic Commerce, Caribbean Export, real merchant experiences</p>
+        <p>Updated for 2026 • Always consult with qualified professionals 💙</p>
+    </footer>
+
+    <button id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.pageYOffset > 300);
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Business structure selection
+        function selectOption(option) {
+            // Update active card styling
+            document.getElementById('card-local').classList.remove('active');
+            document.getElementById('card-international').classList.remove('active');
+            document.getElementById('card-us').classList.remove('active');
+            document.getElementById(`card-${option}`).classList.add('active');
+            
+            // Update indicator
+            const indicator = document.getElementById('indicator-text');
+            const indicatorIcon = document.getElementById('indicator-icon');
+            
+            if (option === 'local') {
+                indicator.innerHTML = 'Option 1: Local Caribbean Business selected';
+                indicatorIcon.className = 'fas fa-home';
+            } else if (option === 'international') {
+                indicator.innerHTML = 'Option 2: International Caribbean LLC selected';
+                indicatorIcon.className = 'fas fa-globe';
+            } else {
+                indicator.innerHTML = 'Option 3: US LLC selected';
+                indicatorIcon.className = 'fas fa-flag-usa';
+            }
+            
+            // Show/hide option-specific content
+            document.getElementById('option-local-content').classList.remove('active');
+            document.getElementById('option-international-content').classList.remove('active');
+            document.getElementById('option-us-content').classList.remove('active');
+            document.getElementById(`option-${option}-content`).classList.add('active');
+            
+            // Show/hide detailed guides
+            document.getElementById('international-detailed-guide').style.display = option === 'international' ? 'block' : 'none';
+            document.getElementById('us-detailed-guide').style.display = option === 'us' ? 'block' : 'none';
+            
+            // Update platform warnings
+            const localWarning = document.getElementById('platform-warning-local');
+            const usWarning = document.getElementById('platform-warning-us');
+            const usPaymentNote = document.getElementById('us-payment-note');
+            
+            if (option === 'us') {
+                localWarning.style.display = 'none';
+                usWarning.style.display = 'block';
+                usPaymentNote.style.display = 'block';
+            } else {
+                localWarning.style.display = 'block';
+                usWarning.style.display = 'none';
+                usPaymentNote.style.display = 'none';
+            }
+            
+            // Show/hide US-specific troubleshooting
+            const usTroubleshooting = document.getElementById('us-troubleshooting');
+            const usTaxTroubleshooting = document.getElementById('us-tax-troubleshooting');
+            const usToolMercury = document.getElementById('us-tool-mercury');
+            const usToolRelay = document.getElementById('us-tool-relay');
+            
+            if (option === 'us') {
+                usTroubleshooting.style.display = 'block';
+                usTaxTroubleshooting.style.display = 'block';
+                usToolMercury.style.display = 'block';
+                usToolRelay.style.display = 'block';
+            } else {
+                usTroubleshooting.style.display = 'none';
+                usTaxTroubleshooting.style.display = 'none';
+                usToolMercury.style.display = 'none';
+                usToolRelay.style.display = 'none';
+            }
+        }
+        
+        // Set local as default
+        selectOption('local');
+    </script>
+</body>
+</html>
