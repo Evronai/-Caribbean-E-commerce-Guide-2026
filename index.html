@@ -228,35 +228,54 @@
             font-size: 0.95rem;
         }
 
-        .tip-box, .warning-box, .code-box {
+        .tip-box {
+            background: #fff3e0;
+            border-left: 5px solid #ffb347;
             padding: 15px;
             margin: 15px 0;
-            border-radius: 12px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+        }
+
+        .warning-box {
+            background: #ffe6e6;
+            border-left: 5px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
             font-size: 0.95rem;
         }
 
         .code-box {
             background: #1e2a3a;
             color: #e6f1ff;
+            padding: 15px;
+            border-radius: 10px;
             font-family: monospace;
+            margin: 15px 0;
             overflow-x: auto;
             white-space: pre-wrap;
             word-wrap: break-word;
+            font-size: 0.9rem;
         }
 
-        /* Tables - MOBILE OPTIMIZED */
+        /* Tables - MOBILE OPTIMIZED with horizontal scroll */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
         .payment-table, .comparison-table, .llm-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background: white;
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             font-size: 0.85rem;
-            display: block;
-            overflow-x: auto;
-            white-space: nowrap;
+            min-width: 600px; /* Forces horizontal scroll on mobile */
         }
 
         .payment-table th, .payment-table td,
@@ -264,36 +283,179 @@
         .llm-table th, .llm-table td {
             padding: 10px 8px;
             text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .payment-table th {
+            background: #003f5c;
+            color: white;
+        }
+
+        .payment-table .available {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .payment-table .unavailable {
+            color: #e74c3c;
+            font-weight: 600;
         }
 
         /* Jurisdiction cards - MOBILE OPTIMIZED */
-        .jurisdiction-grid, .us-state-grid, .option-cards {
+        .jurisdiction-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
             margin: 20px 0;
         }
 
-        .jurisdiction-card, .us-state-card, .option-card {
+        .jurisdiction-card {
             background: white;
             border-radius: 20px;
             padding: 20px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-top: 8px solid #003f5c;
         }
 
-        .jurisdiction-card h4, .us-state-card h4, .option-card h3 {
+        .jurisdiction-card h4 {
             font-size: 1.3rem;
+            color: #003f5c;
             margin-bottom: 10px;
         }
 
-        .option-card {
-            cursor: pointer;
-            transition: all 0.3s;
+        .jurisdiction-card .flag {
+            font-size: 2rem;
+            margin-bottom: 10px;
         }
 
-        .option-card .pros, .option-card .cons {
-            padding: 12px;
+        .jurisdiction-card .tax-tag {
+            background: #27ae60;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 30px;
+            display: inline-block;
             margin: 10px 0;
+            font-size: 0.85rem;
+        }
+
+        .jurisdiction-card ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .jurisdiction-card li {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* US State Cards - MOBILE OPTIMIZED */
+        .us-state-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .us-state-card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-left: 8px solid #1e3a8a;
+        }
+
+        .us-state-card h4 {
+            font-size: 1.3rem;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        .us-state-card .best-for {
+            background: #e6f3ff;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .us-state-card ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .us-state-card li {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Option Cards - MOBILE OPTIMIZED */
+        .option-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .option-card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border: 3px solid transparent;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .option-card:hover {
+            transform: translateY(-5px);
+            border-color: #ffb347;
+        }
+
+        .option-card.active {
+            border-color: #ffb347;
+            background: #fff3e0;
+        }
+
+        .option-card .option-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 5px 12px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: white;
+        }
+
+        .option-card .option-badge.local { background: #27ae60; }
+        .option-card .option-badge.international { background: #e67e22; }
+        .option-card .option-badge.us { background: #1e3a8a; }
+
+        .option-card h3 {
+            font-size: 1.4rem;
+            color: #003f5c;
+            margin: 15px 0 10px;
+        }
+
+        .option-card i {
+            font-size: 2.5rem;
+            color: #ffb347;
+        }
+
+        .option-card .pros {
+            background: #e8f5e9;
+            padding: 12px;
+            border-radius: 12px;
+            margin: 15px 0 10px;
+            font-size: 0.9rem;
+        }
+
+        .option-card .cons {
+            background: #ffe6e6;
+            padding: 12px;
+            border-radius: 12px;
+            margin: 10px 0 0;
             font-size: 0.9rem;
         }
 
@@ -317,6 +479,7 @@
             height: 20px;
             flex-shrink: 0;
             margin-top: 2px;
+            accent-color: #ffb347;
         }
 
         .checklist-item label {
@@ -336,13 +499,29 @@
             background: white;
             border-radius: 15px;
             padding: 20px;
-            border-left: 6px solid #ffb347;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 8px solid #ffb347;
+        }
+
+        .tool-item h4 {
+            font-size: 1.2rem;
+            color: #003f5c;
+            margin-bottom: 8px;
+        }
+
+        .tool-item p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
         }
 
         .tool-link {
+            background: #003f5c;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.85rem;
             display: inline-block;
-            padding: 8px 15px;
-            font-size: 0.9rem;
             margin-top: 10px;
             word-break: break-all;
         }
@@ -371,6 +550,7 @@
 
         .timeline-item .task {
             font-size: 0.9rem;
+            margin-top: 5px;
         }
 
         /* Troubleshooting grid - MOBILE OPTIMIZED */
@@ -385,15 +565,18 @@
             background: white;
             border-radius: 15px;
             padding: 20px;
-            border-left: 6px solid #e74c3c;
+            border-left: 8px solid #e74c3c;
         }
 
         .troubleshooting-item .problem {
-            font-size: 1rem;
+            font-weight: 700;
+            color: #e74c3c;
             margin-bottom: 8px;
+            font-size: 1rem;
         }
 
         .troubleshooting-item .solution {
+            color: #27ae60;
             font-size: 0.95rem;
         }
 
@@ -413,6 +596,19 @@
             margin-right: auto;
         }
 
+        .option-content {
+            display: none;
+        }
+
+        .option-content.active {
+            display: block;
+        }
+
+        /* Detailed guides */
+        #us-detailed-guide, #international-detailed-guide {
+            margin-top: 20px;
+        }
+
         /* Footer */
         footer {
             background: #003f5c;
@@ -422,6 +618,10 @@
             margin-top: 40px;
             border-top: 5px solid #ffb347;
             font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
         }
 
         /* Back to top */
@@ -490,6 +690,10 @@
                 grid-template-columns: repeat(2, 1fr);
             }
             
+            .option-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
             .step-card {
                 flex-direction: row;
             }
@@ -500,6 +704,11 @@
                 align-items: center;
                 justify-content: center;
                 font-size: 2.5rem;
+            }
+            
+            .beginner-intro > div {
+                flex-direction: row;
+                justify-content: center;
             }
         }
 
@@ -667,13 +876,40 @@
             </div>
             <div style="background: white; border-radius: 20px; padding: 20px;">
                 <h3 style="color: #003f5c; font-size: 1.3rem;">Jurisdiction Comparison:</h3>
-                <table class="payment-table">
-                    <tr><th>Jurisdiction</th><th>Setup Cost</th><th>Annual Cost</th><th>Best For</th></tr>
-                    <tr><td>Cayman Islands</td><td>$2,500-3,500</td><td>$1,500</td><td>High-growth, investors</td></tr>
-                    <tr><td>BVI</td><td>$2,000-2,500</td><td>$1,200</td><td>Trading, IP holding</td></tr>
-                    <tr><td>Belize</td><td>$1,500-2,000</td><td>$800-1,000</td><td>Cost-conscious startups</td></tr>
-                    <tr><td>Nevis</td><td>$2,000-2,500</td><td>$1,000</td><td>Asset protection</td></tr>
-                </table>
+                <div class="table-responsive">
+                    <table class="payment-table">
+                        <tr>
+                            <th>Jurisdiction</th>
+                            <th>Setup Cost</th>
+                            <th>Annual Cost</th>
+                            <th>Best For</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Cayman Islands</strong></td>
+                            <td>$2,500-3,500</td>
+                            <td>$1,500</td>
+                            <td>High-growth, investors</td>
+                        </tr>
+                        <tr>
+                            <td><strong>BVI</strong></td>
+                            <td>$2,000-2,500</td>
+                            <td>$1,200</td>
+                            <td>Trading, IP holding</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Belize</strong></td>
+                            <td>$1,500-2,000</td>
+                            <td>$800-1,000</td>
+                            <td>Cost-conscious startups</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nevis</strong></td>
+                            <td>$2,000-2,500</td>
+                            <td>$1,000</td>
+                            <td>Asset protection</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </section>
     </div>
@@ -686,12 +922,34 @@
             </div>
             <div style="background: white; border-radius: 20px; padding: 20px;">
                 <h3 style="color: #003f5c; font-size: 1.3rem;">State Comparison:</h3>
-                <table class="payment-table">
-                    <tr><th>State</th><th>Setup Cost</th><th>Annual Fee</th><th>Best For</th></tr>
-                    <tr><td>Wyoming</td><td>$100</td><td>$60</td><td>Privacy, low cost</td></tr>
-                    <tr><td>Delaware</td><td>$90</td><td>$300</td><td>Venture capital, investors</td></tr>
-                    <tr><td>Florida</td><td>$125</td><td>$138.75</td><td>US operations</td></tr>
-                </table>
+                <div class="table-responsive">
+                    <table class="payment-table">
+                        <tr>
+                            <th>State</th>
+                            <th>Setup Cost</th>
+                            <th>Annual Fee</th>
+                            <th>Best For</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Wyoming</strong></td>
+                            <td>$100</td>
+                            <td>$60</td>
+                            <td>Privacy, low cost</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Delaware</strong></td>
+                            <td>$90</td>
+                            <td>$300</td>
+                            <td>Venture capital, investors</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Florida</strong></td>
+                            <td>$125</td>
+                            <td>$138.75</td>
+                            <td>US operations</td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="tip-box" style="margin-top: 20px;">
                     <strong>💡 EIN note:</strong> Apply by fax/mail as non-resident. Takes 4-8 weeks. Cannot use online system without SSN/ITIN.
                 </div>
@@ -761,38 +1019,40 @@
 
                 <h4>🤔 Step 2.1: Which Platform Should You Use?</h4>
                 
-                <table class="payment-table">
-                    <tr>
-                        <th>Platform</th>
-                        <th>Monthly Cost</th>
-                        <th>Difficulty</th>
-                        <th>Best For</th>
-                    </tr>
-                    <tr>
-                        <td><strong>WooCommerce</strong></td>
-                        <td>$0 + hosting ($10-30)</td>
-                        <td>Medium</td>
-                        <td>Flexibility, any payment gateway</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Shopify</strong></td>
-                        <td>$29+</td>
-                        <td>Easy</td>
-                        <td>Quick start, but payment restrictions</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Wix eCommerce</strong></td>
-                        <td>$23+</td>
-                        <td>Easy</td>
-                        <td>Beginners, simple stores</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Custom</strong></td>
-                        <td>$2,000+ upfront</td>
-                        <td>Hard</td>
-                        <td>Large businesses, unique needs</td>
-                    </tr>
-                </table>
+                <div class="table-responsive">
+                    <table class="payment-table">
+                        <tr>
+                            <th>Platform</th>
+                            <th>Monthly Cost</th>
+                            <th>Difficulty</th>
+                            <th>Best For</th>
+                        </tr>
+                        <tr>
+                            <td><strong>WooCommerce</strong></td>
+                            <td>$0 + hosting ($10-30)</td>
+                            <td>Medium</td>
+                            <td>Flexibility, any payment gateway</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shopify</strong></td>
+                            <td>$29+</td>
+                            <td>Easy</td>
+                            <td>Quick start, but payment restrictions</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wix eCommerce</strong></td>
+                            <td>$23+</td>
+                            <td>Easy</td>
+                            <td>Beginners, simple stores</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Custom</strong></td>
+                            <td>$2,000+ upfront</td>
+                            <td>Hard</td>
+                            <td>Large businesses, unique needs</td>
+                        </tr>
+                    </table>
+                </div>
 
                 <div class="warning-box" id="platform-warning-local">
                     <strong>⚠️ IMPORTANT:</strong> Shopify Payments and Stripe do NOT work in most Caribbean countries. If you choose Shopify, you'll need a third-party payment gateway which costs extra fees.
@@ -863,43 +1123,45 @@
                 <h4>💳 Step 3.2: Choose Your Payment Gateway</h4>
                 <p>Once you have a merchant account, you need a gateway to connect your store to the bank.</p>
 
-                <table class="payment-table">
-                    <tr>
-                        <th>Gateway</th>
-                        <th>Setup Fee</th>
-                        <th>Monthly Fee</th>
-                        <th>Transaction Fee</th>
-                        <th>Works With</th>
-                    </tr>
-                    <tr>
-                        <td><strong>First Atlantic Commerce (FAC)</strong></td>
-                        <td>$0-500</td>
-                        <td>$0-50</td>
-                        <td>2.5-4%</td>
-                        <td>Caribbean banks</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Plug n Pay</strong></td>
-                        <td>$0</td>
-                        <td>$0-30</td>
-                        <td>2.9% + $0.30</td>
-                        <td>Caribbean region</td>
-                    </tr>
-                    <tr>
-                        <td><strong>PayPal</strong></td>
-                        <td>$0</td>
-                        <td>$0</td>
-                        <td>2.9% + $0.30</td>
-                        <td>Most countries</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Authorize.net</strong></td>
-                        <td>$49</td>
-                        <td>$25</td>
-                        <td>2.9% + $0.30</td>
-                        <td>US accounts only</td>
-                    </tr>
-                </table>
+                <div class="table-responsive">
+                    <table class="payment-table">
+                        <tr>
+                            <th>Gateway</th>
+                            <th>Setup Fee</th>
+                            <th>Monthly Fee</th>
+                            <th>Transaction Fee</th>
+                            <th>Works With</th>
+                        </tr>
+                        <tr>
+                            <td><strong>First Atlantic Commerce (FAC)</strong></td>
+                            <td>$0-500</td>
+                            <td>$0-50</td>
+                            <td>2.5-4%</td>
+                            <td>Caribbean banks</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Plug n Pay</strong></td>
+                            <td>$0</td>
+                            <td>$0-30</td>
+                            <td>2.9% + $0.30</td>
+                            <td>Caribbean region</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PayPal</strong></td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>2.9% + $0.30</td>
+                            <td>Most countries</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Authorize.net</strong></td>
+                            <td>$49</td>
+                            <td>$25</td>
+                            <td>2.9% + $0.30</td>
+                            <td>US accounts only</td>
+                        </tr>
+                    </table>
+                </div>
 
                 <div id="us-payment-note" style="display: none; background: #e8f5e9; padding: 15px; border-radius: 10px; margin: 20px 0;">
                     <strong>🇺🇸 US LLC Note:</strong> You can use Stripe, Shopify Payments, and Square directly. Apply with your US EIN and bank account.
@@ -1278,7 +1540,7 @@
                 <div class="step-number">B</div>
                 <div class="step-content">
                     <h4>Step 2: Appoint a Registered Agent</h4>
-                    <p>Every US LLC requires a Registered Agent with a physical address in your formation state. They receive legal documents on your behalf. Costs $50-300/year .</p>
+                    <p>Every US LLC requires a Registered Agent with a physical address in your formation state. They receive legal documents on your behalf. Costs $50-300/year.</p>
                     <div class="tip-box">
                         <strong>💡 Popular agents:</strong> Northwest Registered Agent, ZenBusiness, LegalZoom
                     </div>
@@ -1289,7 +1551,7 @@
                 <div class="step-number">C</div>
                 <div class="step-content">
                     <h4>Step 3: File Articles of Organization</h4>
-                    <p>Submit to the Secretary of State with filing fee ($90-500 depending on state). This legally creates your LLC .</p>
+                    <p>Submit to the Secretary of State with filing fee ($90-500 depending on state). This legally creates your LLC.</p>
                     <div class="code-box">
                         <strong>📋 Required info:</strong> Company name, registered agent, purpose, member names (varies by state)
                     </div>
@@ -1300,9 +1562,9 @@
                 <div class="step-number">D</div>
                 <div class="step-content">
                     <h4>Step 4: Get Your EIN (Employer Identification Number)</h4>
-                    <p>Apply to the IRS for your federal tax ID. Required for bank accounts and tax filings. As a non-resident, use Form SS-4 by fax or mail. Processing takes 4-8 weeks .</p>
+                    <p>Apply to the IRS for your federal tax ID. Required for bank accounts and tax filings. As a non-resident, use Form SS-4 by fax or mail. Processing takes 4-8 weeks.</p>
                     <div class="warning-box">
-                        <strong>⚠️ Critical:</strong> The online EIN application requires an SSN or ITIN. Non-residents MUST use fax or mail .
+                        <strong>⚠️ Critical:</strong> The online EIN application requires an SSN or ITIN. Non-residents MUST use fax or mail.
                     </div>
                 </div>
             </div>
@@ -1311,7 +1573,7 @@
                 <div class="step-number">E</div>
                 <div class="step-content">
                     <h4>Step 5: Draft an Operating Agreement</h4>
-                    <p>Even if not required by your state, create one. It establishes ownership, management, and profit distribution. Essential for banking .</p>
+                    <p>Even if not required by your state, create one. It establishes ownership, management, and profit distribution. Essential for banking.</p>
                 </div>
             </div>
 
@@ -1319,7 +1581,7 @@
                 <div class="step-number">F</div>
                 <div class="step-content">
                     <h4>Step 6: Open a US Bank Account</h4>
-                    <p>You'll need a "bank-ready packet" including :</p>
+                    <p>You'll need a "bank-ready packet" including:</p>
                     <ul>
                         <li>Stamped Articles of Organization</li>
                         <li>EIN confirmation letter</li>
@@ -1329,7 +1591,7 @@
                         <li>Short business plan explaining payment flows</li>
                     </ul>
                     <div class="tip-box">
-                        <strong>💡 Online banks for non-residents:</strong> Mercury, Relay, Wise support remote onboarding 
+                        <strong>💡 Online banks for non-residents:</strong> Mercury, Relay, Wise support remote onboarding
                     </div>
                 </div>
             </div>
@@ -1338,7 +1600,7 @@
                 <div class="step-number">G</div>
                 <div class="step-content">
                     <h4>Step 7: Comply with US Tax Requirements</h4>
-                    <p>Foreign-owned disregarded entities must file Form 5472 for reportable transactions. Missing this triggers a <strong>$25,000 penalty</strong> .</p>
+                    <p>Foreign-owned disregarded entities must file Form 5472 for reportable transactions. Missing this triggers a <strong>$25,000 penalty</strong>.</p>
                     <ul>
                         <li>✓ File Form 5472 + pro-forma Form 1120 annually</li>
                         <li>✓ BOI reporting may apply (check FinCEN requirements)</li>
@@ -1351,7 +1613,7 @@
                 <div class="step-number">H</div>
                 <div class="step-content">
                     <h4>Step 8: Set Up Payment Processing</h4>
-                    <p>With your US LLC and bank account, you can now access :</p>
+                    <p>With your US LLC and bank account, you can now access:</p>
                     <ul>
                         <li>✅ Stripe (full access)</li>
                         <li>✅ Shopify Payments</li>
@@ -1362,7 +1624,7 @@
             </div>
 
             <div class="warning-box" style="margin-top: 30px;">
-                <strong>🚨 COST COMPARISON:</strong> DIY formations often fail bank KYC and can cost $87,000+ in penalties vs $4,500 for professional formation . Work with experts.
+                <strong>🚨 COST COMPARISON:</strong> DIY formations often fail bank KYC and can cost $87,000+ in penalties vs $4,500 for professional formation. Work with experts.
             </div>
         </section>
     </div>
